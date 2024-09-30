@@ -1,13 +1,20 @@
-import React from 'react'
-import Table from './Components/Table'
+import React, { useState } from 'react'
 import Input from './Components/Input'
+import Table from './Components/Table'
+import { useEffect } from 'react'
 
 export default function App() {
+    const [ listSpend, setListSpend ] = useState([])
+
+    const addList = (data) => {
+      data ? setListSpend((prevData) => [...prevData, data]) : alert('Write your spend description')
+      console.log(listSpend)
+    }
 
     return (
       <>
-        <Table></Table>
-        <Input></Input>
+        <Input onSubmit={addList}></Input>
+        <Table lists={listSpend}></Table>
       </>
     )
 }
