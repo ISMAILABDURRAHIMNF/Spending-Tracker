@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Input from './Components/Input'
 import Table from './Components/Table'
-import { useEffect } from 'react'
+import './index.css'
 
 export default function App() {
     const [ listSpend, setListSpend ] = useState([])
@@ -12,9 +12,9 @@ export default function App() {
     }
 
     return (
-      <>
+      <div className='container-main'>
         <Input onSubmit={addList}></Input>
         <Table lists={listSpend}></Table>
-      </>
+      </div>
     )
 }

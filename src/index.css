@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.container-main {
+    @apply w-10/12 mx-auto bg-red-200 p-2
+}
+
+.container-div {
+    @apply w-11/12 mx-auto bg-black
+}

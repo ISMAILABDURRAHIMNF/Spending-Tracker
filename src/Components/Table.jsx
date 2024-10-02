@@ -4,7 +4,7 @@ export default function Table({ lists }) {
     
 
     return (
-        <>
+        <div className='container-div'>
             <table>
                 <thead>
                     <tr>
@@ -29,6 +29,6 @@ export default function Table({ lists }) {
                     </tr>
                 </tbody>
             </table>
-        </>
+        </div>
     )
 }

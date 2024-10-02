@@ -14,7 +14,7 @@ export default function Input({ onSubmit }) {
     }
 
     return (
-        <>
+        <div className='container-div'>
             <input 
                 type="text" 
                 onChange={(e) => setDesc(e.target.value)}
@@ -34,6 +34,6 @@ export default function Input({ onSubmit }) {
                 placeholder='0'
             />
             <button onClick={handleSubmit}>+</button>
-        </>
+        </div>
     )
 }
